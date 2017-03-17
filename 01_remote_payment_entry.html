@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+<p>Page 01 - Remote - Payment Entry</p>
+<form method="post" id="pay" action="http://notlocalhost.com/frame-demo/02_remote_submit_payment.html">
+	<input type="text" name="data" value='02' />
+	<input type="submit" name="submit" />
+<form>
+
+<script type="text/javascript">
+document.getElementById("pay").addEventListener("submit", function(event){
+	history.replaceState(null, null, "http://notlocalhost.com/frame-demo/99_remote_no_back_button.html");
+});
+
+</script>
+
+<body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<body>
+<p>Page 02 - Remote - Payment Submitted</p>
+
+<form method="post" action="http://localhost/frame-demo/03_local_post_back.html" name="back" id="back">
+	<input type="hidden" name="data" value='' />
+	<input type="submit" name="submit" value='' id="submit" />
+<form>
+
+<script type="text/javascript">
+
+// simulate a processing delay, then click submit
+setTimeout(function(){
+	document.getElementById("submit").click();
+},10);
+
+document.getElementById("back").addEventListener("submit", function(event){
+	history.replaceState(null, null, "http://notlocalhost.com/frame-demo/99_remote_no_back_button.html");
+});
+
+</script>
+
+
+</body>
+</html>

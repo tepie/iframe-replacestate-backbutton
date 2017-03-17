@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<body>
+<p>Page 00 - Local - Parent</p>
+
+<p>Remote Page</p>
+
+<iframe id="frame"><p>Your browser does not support iframes.</p></iframe>
+
+<script type="text/javascript">
+// simulate a delayed load of the iframe
+setTimeout(function(){
+	document.getElementById("frame").setAttribute("src", "http://notlocalhost.com/frame-demo/01_remote_payment_entry.html");
+},800);
+
+</script>
+
+</body>
+</html>
