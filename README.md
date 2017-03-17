@@ -21,6 +21,8 @@ back to the local page with it's results when done, we want to avoid the iFrame'
 loading into itself and giving the customer a bad experience. The demo page names are named for 
 payment, but this can be used for anything
 
+[[https://raw.githubusercontent.com/tepietrondi/iframe-replacestate-backbutton/master/Screen%20Shot%202017-03-17%20at%2011.25.54%20AM.png]]
+
 Page 99 - Remote
 -------
 * This page is the remote landing page for reporting not to use the back button
