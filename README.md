@@ -39,16 +39,19 @@ Page 03 - Local
 -------
 * This page is local, it hosts the post back complete message
 
-
 Running the demo
 -------
+* Point browser to http://localhost/frame-demo/00_local_index.html
 * 00 will load and embed 01
 * Now submit the form embedded in the page
 * 01 will post to 02 and post to 03
 * Now click the browser back button, the customer should see page 99 embedded
 
-
-
 Reference 
 =============
+
+* https://developer.mozilla.org/en-US/docs/Web/API/History_API
+* http://www.webdeveasy.com/back-button-behavior-on-a-page-with-an-iframe/
+* https://blog.twitter.com/2012/implementing-pushstate-for-twittercom
+* https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate
 
